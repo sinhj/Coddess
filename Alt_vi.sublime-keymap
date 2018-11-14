@@ -1,0 +1,41 @@
+[
+    // 退出插入模式
+    { "keys": ["z", "z"], "command": "exit_insert_mode", "context":
+        [ { "key": "setting.command_mode", "operand": false },
+        { "key": "setting.is_widget", "operand": false } ] },
+
+    { "keys": ["z", "z"], "command": "exit_visual_mode", "context":
+        [ { "key": "setting.command_mode" },
+        { "key": "num_selections", "operand": 1 },
+        { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": false } ] },
+
+    // 隐藏自动补全
+    { "keys": ["z", "z"], "command": "hide_auto_complete", "context":
+        [ { "key": "auto_complete_visible", "operator": "equal", "operand": true } ] },
+
+    { "keys": ["z", "z"], "command": "vi_cancel_current_action", "context":
+        [ { "key": "setting.command_mode" },
+        { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": false },
+        { "key": "vi_has_input_state" } ] },
+
+
+
+    { "keys": ["ctrl+h"], "command": "move", "args": {"by": "characters", "forward": false } },
+
+    { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true } },
+
+    { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false } },
+
+    { "keys": ["ctrl+l"], "command": "move", "args": {"by": "characters", "forward": true } },
+
+
+
+    { "keys": ["ctrl+r"], "command": "show_panel", "args":
+        {"panel": "replace", "reverse": false } },
+
+
+
+    { "keys": ["alt+f"], "command": "fold" },
+
+    { "keys": ["alt+o"], "command": "unfold" },
+]
