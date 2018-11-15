@@ -30,8 +30,8 @@
     { "keys": ["ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true } },
 
 
-    { "keys": ["ctrl+r"], "command": "show_panel", "args":
-        {"panel": "replace", "reverse": false } },
+    // 替换替换
+    { "keys": ["ctrl+r"], "command": "show_panel", "args": {"panel": "replace", "reverse": false } },
 
 
 
