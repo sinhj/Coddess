@@ -22,10 +22,13 @@
 
     // 光标左移一位
     { "keys": ["ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false } },
+
     // 光标下移一行
     { "keys": ["ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true } },
+
     // 光标上移一行
     { "keys": ["ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false } },
+
     // 光标右移一位
     { "keys": ["ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true } },
 
