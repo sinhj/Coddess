@@ -42,8 +42,8 @@
 
 
     // Ctrl+Q 开始/结束 录制宏
-    // 
-    // 
+    // 写下 ", "
+    // Tools -> Save Macro
     { "key", [",", "command": "run_macro_file", "args":
         { "file": "Packages/User/Comma_add_space.sublime-macro" } }
 
