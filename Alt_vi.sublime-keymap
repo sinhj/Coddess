@@ -20,14 +20,14 @@
 
 
 
-    { "keys": ["ctrl+h"], "command": "move", "args": {"by": "characters", "forward": false } },
-
-    { "keys": ["ctrl+j"], "command": "move", "args": {"by": "lines", "forward": true } },
-
-    { "keys": ["ctrl+k"], "command": "move", "args": {"by": "lines", "forward": false } },
-
-    { "keys": ["ctrl+l"], "command": "move", "args": {"by": "characters", "forward": true } },
-
+    // 光标左移一位
+    { "keys": ["ctrl+h"], "command": "move", "args": { "by": "characters", "forward": false } },
+    // 光标下移一行
+    { "keys": ["ctrl+j"], "command": "move", "args": { "by": "lines", "forward": true } },
+    // 光标下移一行
+    { "keys": ["ctrl+k"], "command": "move", "args": { "by": "lines", "forward": false } },
+    // 光标右移一位
+    { "keys": ["ctrl+l"], "command": "move", "args": { "by": "characters", "forward": true } },
 
 
     { "keys": ["ctrl+r"], "command": "show_panel", "args":
