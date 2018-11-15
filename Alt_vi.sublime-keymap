@@ -38,4 +38,13 @@
     { "keys": ["alt+f"], "command": "fold" },
 
     { "keys": ["alt+o"], "command": "unfold" },
+
+
+
+    // Ctrl+Q 开始/结束 录制宏
+    // 
+    // 
+    { "key", [",", "command": "run_macro_file", "args":
+        { "file": "Packages/User/Comma_add_space.sublime-macro" } }
+
 ]
