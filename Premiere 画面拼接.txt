@@ -1,4 +1,4 @@
-Permiere 画面拼接
+Premiere 画面拼接
 
 影源：640*480
 
@@ -49,4 +49,3 @@ v1(32, 24)
         s1  s1'     s2  s3  s3' s4  s5  s6      s7  s8      s9  s9'    
     p0          p1                          p2          p3             
 
-        
