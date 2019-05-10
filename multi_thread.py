@@ -1,6 +1,8 @@
-# -*- coding: utf-8 -*-
+#! /usr/bin/python
+# encoding= utf-8
+
 import threading
-import os
+import os		# os.system(), os.popen()
 from time import ctime, sleep
 
 
@@ -8,7 +10,7 @@ from time import ctime, sleep
 def play_music(func, f_n):
     for i in range(3):
         print "I was listening to %s.mp3" %func
-        os.popen(r'start "C:\Program Files (x86)\Windows Media Player"\wmplayer.exe E:\sinhj\"%s".mp3' %f_n)
+        os.system(r'start "C:\Program Files (x86)\Windows Media Player"\wmplayer.exe E:\sinhj\"%s".mp3' %f_n)
         sleep(7)
 
 
@@ -60,6 +62,7 @@ if __name__ == '__main__':
     print type(t1)
     print isinstance(a, str)
 
+    op = ctime()
     for t in threads:
         t.setDaemon(True)
         t.start()
@@ -68,5 +71,4 @@ if __name__ == '__main__':
     sleep(3)
     os.system(r'taskkill /IM wmplayer.exe')
     os.system(r'taskkill /IM mpc-hc64.exe')
-    print "Playback over."
-    print ctime()
+    print "Playback over.   %s ~ %s" %(op, ctime())
