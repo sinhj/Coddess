@@ -41,6 +41,10 @@
 
 
 
+    { "keys": ["ctrl+y"], "command": "redo" },
+
+
+
     // Ctrl+Q 开始/结束 录制宏
     // 写下 ", "
     // Tools -> Save Macro
