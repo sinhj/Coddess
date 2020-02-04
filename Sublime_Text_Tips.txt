@@ -12,6 +12,16 @@ EA7E-1153259
 F913BE58 42FEA319 F954EFDD AE881E0B
 ------ END LICENSE ------
 
+your license key is no longer valid, and has been removed
+
+echo "0.0.0.0   license.sublimehq.com" >> C:\Windows\System32\drivers\etc\hosts
+echo "127.0.0.1 www.sublimetext.com" >> C:\Windows\System32\drivers\etc\hosts
+echo "127.0.0.1 45.55.255.55" >> C:\Windows\System32\drivers\etc\hosts
+echo "127.0.0.1 45.55.41.223" >> C:\Windows\System32\drivers\etc\hosts
+
+// 刷新 DNS 解析缓存
+> ipconfig /flushdns
+
 
 
 不可升级
