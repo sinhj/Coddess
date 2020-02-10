@@ -19,8 +19,7 @@ echo "127.0.0.1 www.sublimetext.com" >> C:\Windows\System32\drivers\etc\hosts
 echo "127.0.0.1 45.55.255.55" >> C:\Windows\System32\drivers\etc\hosts
 echo "127.0.0.1 45.55.41.223" >> C:\Windows\System32\drivers\etc\hosts
 
-// 刷新 DNS 解析缓存
-> ipconfig /flushdns
+> shutdown /r /t 0
 
 
 
